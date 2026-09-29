@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>EduGenie - AI Learning Assistant</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">✦ EduGenie</div>
+        <span class="tagline">Your Personal AI Tutor</span>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <p class="eyebrow">LEARN SMARTER</p>
+
+            <h1>
+                What would you like to
+                <br>
+                <em>learn today?</em>
+            </h1>
+
+            <p>
+                Ask questions, understand concepts,
+                summarize notes, practise quizzes,
+                and plan your learning journey.
+            </p>
+
+        </section>
+
+
+        <nav id="tabs">
+
+            <button class="active" data-tab="qa">
+                Ask AI
+            </button>
+
+            <button data-tab="explain">
+                Explain
+            </button>
+
+            <button data-tab="summarize">
+                Summarize
+            </button>
+
+            <button data-tab="quiz">
+                Quiz
+            </button>
+
+            <button data-tab="learn">
+                Learning Path
+            </button>
+
+        </nav>
+
+
+        <section class="panel">
+
+            <form id="form">
+
+                <label id="label" for="input">
+                    Ask EduGenie a question
+                </label>
+
+                <textarea
+                    id="input"
+                    required
+                    placeholder="Why is the sky blue?"
+                ></textarea>
+
+                <button class="submit" id="submit" type="submit">
+                    Get Answer →
+                </button>
+
+            </form>
+
+            <div id="result" aria-live="polite"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        Made for curious minds · EduGenie
+    </footer>
+
+
+    <script src="/static/app.js"></script>
+
+</body>
+</html>
